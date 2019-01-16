@@ -1,0 +1,156 @@
+/* For the entire website */
+* {
+    box-sizing: border-box;
+}
+
+/* For all divs */
+div {
+    display: block;
+}
+
+/* body design */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5px;
+    color: black;
+    background-color: white;
+    margin: 0;
+}
+
+/* Class sets text to center */
+.text-center {
+    text-align: center;
+}
+
+/* Headers */
+.heading {
+    padding: 30px 0;
+    margin-bottom: 30px;
+    background-color: #eee; 
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.heading p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+}
+
+.container {
+    display: block;
+    padding: 0 15px;
+    margin: 0 30px;
+}
+
+/* Row design */
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* Column design */
+.col .col-sm-12 {
+    position: relative;
+    min-height: 1px;
+    padding: 0px 15px;
+}
+
+/*button styling */
+button {
+    text-transform: none;
+    overflow: visible;    
+    
+}
+
+.btn-full {
+    display: block;
+    width: 100%;
+}
+
+.btn {
+   display: inline-block;
+   padding: 6px 12px;
+   margin-bottom: 8px;
+   font-size: 14px;
+   font-weight: 400;
+   text-align: center;
+   color: #fff;
+   border: 1px solid transparent;
+   border-radius: 4px;
+   cursor: pointer;
+   -webkit-user-select: none;
+}
+
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+    cursor: not-allowed;
+}
+
+.btn-default {
+    color: #777;
+    border: 1px solid #a9a3a3;
+}   
+
+.btn-green {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.btn-green:hover { background-color: #4cae4c; }
+
+.btn-blue {
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.btn-blue:hover { background-color: #2e6da4; }
+
+.btn-orange {
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+
+.btn-orange:hover { background-color: #eea236; }
+
+.btn-red {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.btn-red:hover { background-color: #d43f3a; }
+
+/*form fields*/
+.fields .btn-default { margin: 20px 0; }
+
+.textarea {
+    margin-top: 10px;
+    width: 300px;
+    height: 75px;
+}
+
+/*Footer*/
+.footer {
+    background-color: #f8f8f8;
+    border-top: 1px solid #e7e7e7;
+    bottom: 0;
+    right: 0;
+    left: 0px;
+    z-index: 1030;
+    min-height: 50px;
+    margin-bottom: 0px;
+    position: fixed;  
+}
+.footer-text {
+    text-align: right;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-right: 10px;
+    color: #777;
+}
+

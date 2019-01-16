@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Section</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Custom CSS -->
+        <link rel="stylesheet" href="main.css">
+    </head>
+    
+    <body>
+        
+        <div class="heading text-center">
+            <h1>Add Another Section</h1>
+        </div>
+        
+        <div class="container">
+           
+            
+                OpCode: <input type="text" name="opCode" value="AddSection" class="btn btn-default disabled"/><br/><hr>
+                
+                <div class="fields">
+                    <form method="doGet" action="MoreSectionServlet">
+                    Name of Section: <input type="text" name="parm3" value="" class="btn btn-default" required/><br>
+                    Short description: <br> <textarea class="btn btn-default textarea" name="parm4" required></textarea> <br>
+                    </form>
+                  
+                </div>
+          
+         
+              
+                <button type="submit" name="addStatement" class="btn btn-green">Add Statement</button>
+                    
+            
+                <!--Add Another Section -->
+               
+                <button type="submit" name="addSection" class="btn btn-blue">Add Another Section</button> |
+              
+                <!--Preview Page-->
+                
+                <button type="submit" name="preview" class="btn btn-default">Preview</button> |
+            
+          
+               
+            <form action="infoServlet">
+                <input type="submit" value="Cancel" class="btn btn-red">
+            </form>
+        </div>
+        
+    </body>
+</html>

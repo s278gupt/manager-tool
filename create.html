@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+Enter fields: 
+Name of assessment, Purpose, Short description, Version number (v2)
+Proceed or Cancel button options ->
+Check if the name, version, purpose, etc. already exists (v2)
+If it does already exist, display appropriate error pop-up “i.e. Already Exists - Try Again” (v2)
+-->
+<html>
+    <head>
+        <title>Create Assessment</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="main.css">
+    </head>
+    
+    <body>
+        <div class="heading text-center">
+            <h1>Create Assessment</h1>
+        </div>
+        
+        
+        <div class="container">
+        <!--Enter fields: -->
+        <form action="createServlet" method="get">
+            OpCode: <input type="text" name="opCode" value="AddAssessment" class="btn btn-default disabled"/>&nbsp; &nbsp; &nbsp;
+            Version number: <input type="text" value=" v2 " name="parm4" class="btn btn-default disabled"/><br/><hr/>
+            
+            <div class="fields">
+            Name of Assessment: <input type="text" name="parm1" value="" class="btn btn-default" required><br>
+            Purpose of Assessment: <br> <textarea class="desc btn btn-default textarea" name="parm2" required></textarea> <br>
+            Short description: <br> <textarea class="desc btn btn-default textarea" name="parm3" required></textarea> 
+            <br>
+            </div>
+            
+            <input type="submit" value="Next" name="Next" class="btn btn-green" />
+        </form>
+         
+        <!--Cancel Button Options -->
+        <form action="index.html">
+            <input type="submit" class="btn btn-red" value="Cancel"><hr/>
+        </form>
+            
+        </div>
+        
+        <!--Footer-->
+        <div class="footer">
+            <p class="footer-text">Place content for footer here</p>
+        </div>
+        
+    </body>
+</html>
