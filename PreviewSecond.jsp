@@ -1,9 +1,3 @@
-<%-- 
-    Document   : Preview
-    Created on : 17-Jul-2016, 7:19:30 PM
-    Author     : carla
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
